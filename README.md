@@ -1,10 +1,8 @@
-# OSNW
+# Modified XV6
 
-Roll No : 2018113003
+A modification of XV6 with scheduling algorithms, namely FCFS, Priority‐based and MLFQ, along with a couple of System Calls.
 
-## Assignment 5
-
-My MLFQ algorithm was not working, and was giving errors and thus is not included in the submission. Other algorithms are described below.
+## Benchmark of Scheduling Algorithms
 
 ## Round Robin
 Ticks taken to complete: 2340
@@ -20,8 +18,10 @@ Ticks taken to complete: 2747
 
 In this the minimum priority process is found and sent to running, after that is finished, the algo checks again if there is any process with even less amount of priority and id there is, it executes that else continues with that as the least prioirty.
 
-This is the worst performer (MLFQ would be slower)
+This is the second worst performer.
 
 ## MLFQ
 
-I was not able to implement the algo, but the exploit would be to give up IO before its slice to retain the priority.
+Ticks taken to complete: 3012
+
+The MLFQ algoritm gives up IO before its slice to retain the priority, thus making it the slowest.
